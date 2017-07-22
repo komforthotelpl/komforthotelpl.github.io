@@ -237,8 +237,7 @@ footer p {
     margin-top: 20px;
 }
 
-/*    Text align for the text in a contact section on collapsed veiw  (NOT WORKING!!!)  */
-
+/*    Text align for the text in a contact section on collapsed veiw    */
 @media  (max-width 991px){
     p.text-contact {
         margin-top: 10px !important;
@@ -456,17 +455,4 @@ footer p {
 
 p.text-glyphs {
     margin-bottom: 5px;
-}
-
-.img-flag {
-    position: relative;
-    display: inline;
-    margin-right: 10px;
-}
-
-.language-flags {
-    display: inline;
-    position: absolute;
-    right: 20px;
-    top: 20px;
 }
