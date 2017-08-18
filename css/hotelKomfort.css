@@ -5,7 +5,7 @@
  */
 
 body {
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Helvetica Neue", "Helvetica", "Arial", sans-serif;
     background: url('../img/bg_violet_1.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,7 +20,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Josefin Slab","Helvetica Neue","Helvetica","Arial","sans-serif";
+    font-family: "Josefin Slab","Helvetica Neue","Helvetica","Arial", sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -45,9 +45,10 @@ hr {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
+    padding: 15px 5px;
 }
 
-@media screen and (min-width:1200px) {      /*   Changed min-width from 1200 to 992px    */
+@media screen and (min-width:1200px) {
     .navbar-nav {
         text-transform: uppercase;
         font-weight: 400;
@@ -64,17 +65,19 @@ hr {
 }
 
 .brand-name {
-    text-transform: capitalize;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2em;
+    font-family: "Josefin Slab","Helvetica Neue","Helvetica","Arial", sans-serif;                    /*!!!!!!!!!!!!!!!*/
+}
+@media screen and (max-width:200px) {
+    .brand-name {
+        font-size: 1.5em;
+    }
 }
 
 .brand-before {
     margin: 15px 0;
-}
-
-.brand-name {
-    margin: 0;
-    font-size: 3em;     /*  was 4em */
-/*    font-family: sans-serif;*/
 }
 
 .tagline-divider {
@@ -125,7 +128,7 @@ footer p {
 /*        padding: 10px 0 10px;             was padding: 30px 0 10px; */
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Josefin Slab","Helvetica Neue","Open Sans",Helvetica, sans-serif, Arial;
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
@@ -255,12 +258,6 @@ footer p {
     }
 }
 
-/*    Brand glyphicons size     */
-
-#star1, #star2, #star3 {
-    font-size: 50%;
-}
-
     /* Pricing Page Styles */
 
 .price {
@@ -294,17 +291,18 @@ footer p {
 
 .glyphicon {
     margin-right: 10px;
+    color: #555;
 }
 
 /*    Glyphicons stars on main page under the carousel H1   */
 
 #glyph1 {
     display: inline;
+    margin-left: 10px;
 }
 #glyph2, #glyph3 {
     display: inline;
 }
-
 
 
 #logo {
@@ -324,42 +322,22 @@ footer p {
 
 #logo-small {
     display: inline;
-    background: url('../img/logo_small.png') no-repeat;
+/*  background: url('../img/logo_small.png') no-repeat;
     width: 60px;
-    height: 48px;
+    height: 48px; */
+
     position: relative;
     float: left;
     margin-top: -14px;
-/*
-    border: o;
-    border: none;
-    border-style: none;
-*/
 }
 
-/*
-.img #logo-small {
-    border: none;
-    border-style: none;
-}
-*/
+    /*  Making small logo img invisible in xs screen brand name text - smaller  */
 
 @media only screen and (max-width: 331px) {
     #logo-small {
         display: none;
     }
 }
-@media screen and (max-width: 271px) {
-    .navbar-brand {
-        font-size: 15px;
-    }
-}
-@media screen and (max-width: 245px) {
-    .navbar-brand {
-        font-size: 12px;
-    }
-}
-
 
 /*  Making credit card number smaller not to break in two lines with the credit-card-glyph  */
 
@@ -375,18 +353,37 @@ footer p {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 1px solid #004d7f;
 }
+.navbar-header button.navbar-toggle:hover {
+    background: #b6cbee;
+}
 
 .navbar-header button.navbar-toggle  {
     clear: both;
 }
 .navbar-default .navbar-brand {
     color: #004d7f;
-/*    position: absolute;*/
-/*    padding-left: 70px;*/
-    display: block;
+}
+
+/*  Making brand name text smaller and disappear in xxs screen size  */
+
+@media screen and (max-width: 367px) {
+    .navbar-brand {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .navbar-brand {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 255px) {
+    .navbar-brand {
+        display: none;
+    }
 }
 
 
+----------------------------------------------------
 /*Positioning the languages button-group
 
 #lang-btn-group {
@@ -408,13 +405,17 @@ footer p {
 .btn-default.active {
     background: #ddecf6;
 }
-*/
 
-    /*  Div with language changing button   */
+
+      Div with language changing button  
 
 @media only screen and (max-width: 767px) {
     .dropdown-lang {
         display: none;
+    }
+    .language-flags-collapse {
+
+        position:relative;
     }
 }
 
@@ -423,36 +424,55 @@ footer p {
     right: 20px;
     top: 20px;
 }
+-------------------------------------------------
+-------------------------------------------------
 
-    /*  Language changing button    */
+/*  Language changing button  */ 
 
-.btn-default-lang, .btn-default-lang:focus, .open>.dropdown-toggle.btn-default-lang, .btn-default-lang.active, .btn-default-lang:active.focus, .btn-default-lang:active:focus, .open>.dropdown-toggle.btn-default-lang:focus {
-    padding-left: 10px;
-    padding-right: 10px;
+.btn-default-lang:focus, .open>.dropdown-toggle.btn-default-lang, .btn-default-lang.active, .btn-default-lang:focus, .btn-default-lang.active.focus, .btn-default-lang.active:focus, .btn-default-lang:active:focus, .open>.dropdown-toggle.btn-default-lang:focus{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    
     background: #ddecf6;
     border-color: #bccdd8;
 }
+
+.btn-default-lang{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background: #ddecf6;
+    border-color: #bccdd8;
+}
+
 .btn-default-lang:hover, .open>.dropdown-toggle.btn-default-lang:hover {
     background: #b6cbee;
     border-color: #96abce;
 }
 
-    /*  List of languages   */
+    /*  List of languages */  
 
 .dropdown-lang-change {
-    min-width: inherit;
+    min-width: 0;
+/*
     background-color: rgba(255,255,255,0.9);
-/*    background-color: transparent;*/
     border-color: #bccdd8;
+*/
 }
 .dropdown-lang-change>li>a {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .dropdown-lang-change>li>a:hover {
     background: #b6cbee;
 }
+
+*/
+----------------------------------------------------
 
 p.text-glyphs {
     margin-bottom: 5px;
@@ -463,10 +483,68 @@ p.text-glyphs {
     display: inline;
     margin-right: 10px;
 }
+.img-flag-xs {
+    position: relative;
+    display: inline;
+    margin-right: 0px;
+}
 
 .language-flags {
+        display: inline;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .language-flags {
+        display: none;
+        
+    }
+}
+
+@media only screen and (min-width: 456px) {         /*  after screen 455px flags are not shown  */
+    #language-flags-xs {
+        display: none;
+        
+    }
+}
+
+.language-flags-s {
     display: inline;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 455px) {
+    .language-flags-s {
+        display: none;
+    }
+}
+
+
+.dropdown-lang {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+
+@media only screen and (min-width: 456px) {         /*  after screen 455px flags are not shown  */
+    .dropdown-lang {
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 255px) {
+    .h2-intro {
+        font-size: 1.5em;
+    }
+}
+
+#lighter-font {
+    font-weight: lighter;
 }

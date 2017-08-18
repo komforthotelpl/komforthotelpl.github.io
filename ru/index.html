@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Отель Комфорт, главная страница сайта, русская версия">
+    <meta name="description" content="Отель Комфорт - для работы и бизнеса! Расположен Комфорт отель в местности Кшивачка, находящейся в 25 км от центра Кракова. Выгодное положение вблизи международных трасс позволяет быстро добраться до наиболее привлекательных мест Малопольского воеводства Польши.">
     <meta name="author" content="Hanna Vasiutina">
-    <meta name="keywords" content="Комфорт, Отель, отелькомфорт, комфортотель Кшивачка, Польша">
-
-    <title>Отель Komfort - Кшивачка</title>
+    <meta name="keywords" content="комфорт, komfort, отель, отель комфорт, комфорт отель, отель комфорт кшивачка, комфорт отель кшивачка, Польша">
+    
+    <title>Отель Komfort / Комфорт - Кшивачка</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -36,9 +37,9 @@
 <body>
     <header>
         <!--   Language flags -->
-        <div class="col-sm hidden-sm-down language-flags">
+        <div class="language-flags">
             <a href="../index.html" title="версия польская"><img class="img-responsive img-flag" src="../img/flags/pl.png"></a>
-            <a href="#" title="версия российская"><img class="img-responsive img-flag" src="../img/flags/ru.png"></a>
+            <a href="#" title="версия русская"><img class="img-responsive img-flag" src="../img/flags/ru.png"></a>
             <a href="#" title="версия английская"><img class="img-responsive img-flag" src="../img/flags/uk.png"></a>
             
         </div>
@@ -61,17 +62,34 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->    
-                    <!-- added logo-small to the collapsed nav -->
+                    <!-- language flags for the screen whith a toggle menu button -->
+                    <div class="language-flags-s">
+                        <a href="../index.html" title="версия польская"><img class="img-responsive img-flag" src="../img/flags/pl.png"></a>
+                        <a href="#" title="версия русская"><img class="img-responsive img-flag" src="../img/flags/ru.png"></a>
+                        <a href="#" title="версия английская"><img class="img-responsive img-flag" src="../img/flags/uk.png"></a>
+                    </div>
+                    <!-- language button for xxs screen -->
+                    <div class="dropdown dropdown-lang">
+                        <a href="#" title="версия русская" button class="btn btn-default dropdown-toggle btn-default-lang" type="button" id="dropdownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img class="img-responsive img-flag-xs" src="../img/flags/ru.png">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-lang-change" aria-labelledby="dropdownLangMenu">
+                            <li><a href="../index.html" title="версия польская"><img class="img-responsive img-flag-xs" src="../img/flags/pl.png"></a></li>
+                            <li><a href="#" title="версия английская"><img class="img-responsive img-flag-xs" src="../img/flags/uk.png"></a></li>
+                        </ul>
+                    </div>
                     
-                    <a href="../index.html" class="navbar-brand" ><img id="logo-small" alt="" >Отель Komfort
-                    </a>    
+                    <!-- added small logo picture to the collapsed nav -->
+                    <a href="index.html" class="navbar-brand" alt="small logo"><img id="logo-small" src="../img/logo_small.png" >Hotel Komfort
+                    </a>
                 </div>
                 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="ru/index.html">Отель</a>
+                            <a href="#">Отель</a>
                         </li>
                         <li>
                             <a href="rooms.html">Номера</a>
@@ -128,9 +146,9 @@
                         </a>
                     </div>
                     <h2 class="brand-before">
-                        <small>Приветствуем в</small>
+                        <small>приветствуем в</small>
                     </h2>
-                    <h1 class="brand-name">отеле Komfort <small><small><span id="glyph1" class="glyphicon glyphicon-star"></span></small><small><span id="glyph2" class="glyphicon glyphicon-star"></span></small><small><span id="glyph3" class="glyphicon glyphicon-star"></span></small></small></h1>
+                    <h1 class="brand-name"><span id="lighter-font">отеле</span> Komfort <small><span id="glyph1" class="glyphicon glyphicon-star"></span></small><small><span id="glyph2" class="glyphicon glyphicon-star"></span></small><small><span id="glyph3" class="glyphicon glyphicon-star"></span></small></h1>
                     <hr class="tagline-divider">
                     <h2>
                         <small>

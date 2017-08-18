@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hotel Komfort - restauracja Komfort: kuchnia międzynarodowa, wesela, imprezy">
+    <meta name="description" content="Hotel Komfort - restauracja Komfort: kuchnia międzynarodowa, organizacjia bankietów, wesel, imprez">
     <meta name="author" content="Hanna Vasiutina">
     <meta name="keywords" content="Komfort, Hotel, hotel komfort, komfort hotel, Krzywaczka, Komfort hotel Krzywaczka, hotel Komfort Krzywaczka, restaurant, restauracja, restauracja komfort, wesele, święto, bankiet">
 
@@ -34,7 +34,7 @@
 <body>
     <header>
         <!--   Language flags -->
-        <div class="col-sm hidden-sm-down language-flags">
+        <div class="language-flags hidden-xs">
             <a href="#" title="wersja polska"><img class="img-responsive img-flag" src="img/flags/pl.png"></a>
             <a href="ru/restaurant.html" title="wersja rosyjska"><img class="img-responsive img-flag" src="img/flags/ru.png"></a>
             <a href="#" title="wersja angielska"><img class="img-responsive img-flag" src="img/flags/uk.png"></a>
@@ -58,8 +58,29 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                    <a class="navbar-brand" href="index.html">Hotel Komfort</a>
+                    <!-- language flags for the screen whith a toggle menu button -->
+                    <div class="language-flags-s">
+                        <a href="#" title="wersja polska"><img class="img-responsive img-flag" src="img/flags/pl.png"></a>
+                        <a href="ru/restaurant.html" title="wersja rosyjska"><img class="img-responsive img-flag" src="img/flags/ru.png"></a>
+                        <a href="#" title="wersja angielska"><img class="img-responsive img-flag" src="img/flags/uk.png"></a>
+                    </div>
+                    <!-- language button for xxs screen -->
+                    <div class="dropdown dropdown-lang">
+                        <a href="#" title="wersja polska" button class="btn btn-default dropdown-toggle btn-default-lang" type="button" id="dropdownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img class="img-responsive img-flag-xs" src="img/flags/pl.png">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-lang-change" aria-labelledby="dropdownLangMenu">
+                            <li><a href="ru/restaurant.html" title="wersja rosyjska"><img class="img-responsive img-flag-xs" src="img/flags/ru.png"></a></li>
+                            <li><a href="#" title="wersja angielska"><img class="img-responsive img-flag-xs" src="img/flags/uk.png"></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- added small logo picture to the collapsed nav -->
+                    <a href="index.html" class="navbar-brand" alt="small logo"><img id="logo-small" src="img/logo_small.png" >Hotel Komfort
+                    </a>
                 </div>
+            
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
