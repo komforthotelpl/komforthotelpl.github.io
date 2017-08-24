@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Отель Комфорт, страница конференции">
+    <meta name="description" content="Конференционные залы отеля Комфорт наилучшим способом приспособлены для организация конференций, тренингов и безнес-встреч">
     <meta name="author" content="Hanna Vasiutina">
-    <meta name="keywords" content="Комфорт, Отель, отелькомфорт, комфортотель, Кшивачка, конференции">
+    <meta name="keywords" content="Комфорт, Отель, отель комфорт, комфорт отель, отель комфорт Кшивачка, отель комфорт Кшивачка, конференции, конференционный зал">
+    
 
     <title>Конференции - Отель Komfort - Кшивачка</title>
 
@@ -62,7 +63,27 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                    <a class="navbar-brand" href="index.html">Hotel Komfort</a>
+                    <!-- language flags for the screen whith a toggle menu button -->
+                    <div class="language-flags-s">
+                        <a href="../conference.html" title="версия польская"><img class="img-responsive img-flag" src="../img/flags/pl.png"></a>
+                        <a href="#" title="версия русская"><img class="img-responsive img-flag" src="../img/flags/ru.png"></a>
+                        <a href="#" title="версия английская"><img class="img-responsive img-flag" src="../img/flags/uk.png"></a>
+                    </div>
+                    <!-- language button for xxs screen -->
+                    <div class="dropdown dropdown-lang">
+                        <a href="#" title="версия русская" button class="btn btn-default dropdown-toggle btn-default-lang" type="button" id="dropdownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img class="img-responsive img-flag-xs" src="../img/flags/ru.png">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-lang-change" aria-labelledby="dropdownLangMenu">
+                            <li><a href="../conference.html" title="версия польская"><img class="img-responsive img-flag-xs" src="../img/flags/pl.png"></a></li>
+                            <li><a href="#" title="версия английская"><img class="img-responsive img-flag-xs" src="../img/flags/uk.png"></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- added small logo picture to the collapsed nav -->
+                    <a href="index.html" class="navbar-brand" alt="small logo"><img id="logo-small" src="../img/logo_small.png" >Hotel Komfort
+                    </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -77,7 +98,7 @@
                             <a href="restaurant.html">Ресторан</a>
                         </li>
                         <li class="active">
-                            <a href="conference.html">Конференции</a>
+                            <a href="#">Конференции</a>
                         </li>
                         <li>
                             <a href="contact.html">Контакт</a>
