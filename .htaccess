@@ -1,6 +1,7 @@
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+# ponizsza linijka wymagana na serwerach Netart
+# RewriteBase /
+RewriteCond %{HTTP_HOST} ^(www.)?komfort-hotel\.pl
+RewriteRule (.*) http://www.komfort-hotel.pl/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^komfort-hotel.pl
+RewriteRule (.*) http://www.komfort-hotel.pl/$1 [R=301,L]
