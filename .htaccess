@@ -1,7 +1,3 @@
-RewriteEngine On
-# ponizsza linijka wymagana na serwerach Netart
-# RewriteBase /
-RewriteCond %{HTTP_HOST} ^(www.)?komfort-hotel\.pl
-RewriteRule (.*) http://www.komfort-hotel.pl/$1 [R=301,L]
-RewriteCond %{HTTP_HOST} ^komfort-hotel.pl
-RewriteRule (.*) http://www.komfort-hotel.pl/$1 [R=301,L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.komfort-hotel\.pl [NC]
+RewriteRule ^(.*)$ http://komfort-hotel.pl/$1 [L,R=301]
