@@ -83,7 +83,7 @@ var popupStyle = "<style>" +
 "}"+
 "</style>";
 
-var kodpopup = popupStyle + "<img id='myImg' src=img/promocja_swiateczna.jpg' width='0' height='0'>" +  //ścieżka image
+var kodpopup = popupStyle + "<img id='myImg' src='img/promocja_swiateczna.jpg' width='0' height='0'>" +  //ścieżka image
 	"<div id='myModal' class='modal'>" +
 	"<span class='close'>&times;</span>"+
 	"<img class='modal-content' id='img01'>"+
