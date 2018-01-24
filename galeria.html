@@ -53,6 +53,183 @@
 <script type="text/javascript" src="http://komfort-hotel.pl/lib/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="http://komfort-hotel.pl/source/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="http://komfort-hotel.pl/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    
+
+    <style>
+    .pcont img{
+        width:150px;
+        height:75px;
+    }
+    .panel{
+        display: none;
+    }
+    #tresc > ul li{
+        display: inline-block;
+    }
+    .col-md-3{
+        text-align:center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!--   Language flags -->
+        <div class="language-flags hidden-xs">
+            <a href="#" title="wersja polska"><img class="img-responsive img-flag" src="img/flags/pl.png"></a>
+            <a href="ru/rooms.html" title="wersja rosyjska"><img class="img-responsive img-flag" src="img/flags/ru.png"></a>
+            <a href="#" title="wersja angielska"><img class="img-responsive img-flag" src="img/flags/uk.png"></a>
+        </div>
+
+        <!--    Logo picture    -->
+        <div class="brand">
+                <a href="index.html"><img id="logo" class="img-responsive img-center" src="img/logoColor_170x640.png" alt=""></a>
+        </div>
+        <div class="address-bar">Krzywaczka 991 | tel +48 12-444-54-54 | gsm +48 60-939-73-85</div>
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->    
+                    <!-- language flags for the screen whith a toggle menu button -->
+                    <div class="language-flags-s">
+                        <a href="#" title="wersja polska"><img class="img-responsive img-flag" src="img/flags/pl.png"></a>
+                        <a href="ru/rooms.html" title="wersja rosyjska"><img class="img-responsive img-flag" src="img/flags/ru.png"></a>
+                        <a href="#" title="wersja angielska"><img class="img-responsive img-flag" src="img/flags/uk.png"></a>
+                    </div>
+                    <!-- language button for xxs screen -->
+                    <div class="dropdown dropdown-lang">
+                        <a href="#" title="wersja polska" button class="btn btn-default dropdown-toggle btn-default-lang" type="button" id="dropdownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img class="img-responsive img-flag-xs" src="img/flags/pl.png">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-lang-change" aria-labelledby="dropdownLangMenu">
+                            <li><a href="ru/rooms.html" title="wersja rosyjska"><img class="img-responsive img-flag-xs" src="img/flags/ru.png"></a></li>
+                            <li><a href="#" title="wersja angielska"><img class="img-responsive img-flag-xs" src="img/flags/uk.png"></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- added small logo picture to the collapsed nav -->
+                    <a href="index.html" class="navbar-brand" alt="small logo"><img id="logo-small" src="img/logo_small.png" >Hotel Komfort
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">O hotelu</a>
+                        </li>
+                        <li>
+                            <a href="rooms.html">Pokoje</a>
+                        </li>
+                        <li>
+                            <a href="restaurant.html">Restauracja</a>
+                        </li>
+                        <li>
+                            <a href="conference.html">Konferencje</a>
+                        </li>
+                         
+                      <li class="active">
+                        <a href="aktualnosci.html">Aktualności</a>
+                        </li>
+                        
+                        <li>
+                            <a href="contact.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row" style="min-width:100%">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>GALERIA</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-3 pcont">
+                    <img src="http://komfort-hotel.pl/img/galeria/81062_lpan.jpg" alt="" class="href">
+                </div>
+                <div class="col-md-3 pcont">
+                    <a class="fancybox" href="http://komfort-hotel.pl/img/galeria/81063_lpan.jpg" data-fancybox-group="gallery"><img src="http://komfort-hotel.pl/img/galeria/81063_lpan.jpg"/></a>
+                </div>
+                <div class="col-md-3 pcont">
+                    <a class="fancybox" href="http://komfort-hotel.pl/img/galeria/81064_lpan.jpg" data-fancybox-group="gallery"><img src="http://komfort-hotel.pl/img/galeria/81064_lpan.jpg"/></a>
+                </div>
+                <div class="col-md-3 pcont">
+                    <a class="fancybox" href="http://komfort-hotel.pl/img/galeria/81065_lpan.jpg" data-fancybox-group="gallery"><img src="http://komfort-hotel.pl/img/galeria/81065_lpan.jpg"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Komfort Hotel 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<!-- Kod tagu remarketingowego Google -->
+<!--------------------------------------------------
+Tagi remarketingowe nie mogą być wiązane z informacjami umożliwiającymi identyfikację osób ani umieszczane na stronach o tematyce należącej do kategorii kontrowersyjnych. Więcej informacji oraz instrukcje konfiguracji tagu znajdziesz tutaj: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 829757127;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/829757127/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+    
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5a0aedf1bb0c3f433d4c91de/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+    
     <script type="text/javascript">
         $(document).ready(function() {
             /*
@@ -229,180 +406,6 @@
 
         });
     </script>
-
-    <style>
-    .pcont img{
-        width:150px;
-        height:75px;
-    }
-    .panel{
-        display: none;
-    }
-    #tresc > ul li{
-        display: inline-block;
-    }
-    .col-md-3{
-        text-align:center;
-        }
-    </style>
-
-</head>
-
-<body>
-    <header>
-        <!--   Language flags -->
-        <div class="language-flags hidden-xs">
-            <a href="#" title="wersja polska"><img class="img-responsive img-flag" src="img/flags/pl.png"></a>
-            <a href="ru/rooms.html" title="wersja rosyjska"><img class="img-responsive img-flag" src="img/flags/ru.png"></a>
-            <a href="#" title="wersja angielska"><img class="img-responsive img-flag" src="img/flags/uk.png"></a>
-        </div>
-
-        <!--    Logo picture    -->
-        <div class="brand">
-                <a href="index.html"><img id="logo" class="img-responsive img-center" src="img/logoColor_170x640.png" alt=""></a>
-        </div>
-        <div class="address-bar">Krzywaczka 991 | tel +48 12-444-54-54 | gsm +48 60-939-73-85</div>
-
-    <!-- Navigation -->
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->    
-                    <!-- language flags for the screen whith a toggle menu button -->
-                    <div class="language-flags-s">
-                        <a href="#" title="wersja polska"><img class="img-responsive img-flag" src="img/flags/pl.png"></a>
-                        <a href="ru/rooms.html" title="wersja rosyjska"><img class="img-responsive img-flag" src="img/flags/ru.png"></a>
-                        <a href="#" title="wersja angielska"><img class="img-responsive img-flag" src="img/flags/uk.png"></a>
-                    </div>
-                    <!-- language button for xxs screen -->
-                    <div class="dropdown dropdown-lang">
-                        <a href="#" title="wersja polska" button class="btn btn-default dropdown-toggle btn-default-lang" type="button" id="dropdownLangMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <img class="img-responsive img-flag-xs" src="img/flags/pl.png">
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-lang-change" aria-labelledby="dropdownLangMenu">
-                            <li><a href="ru/rooms.html" title="wersja rosyjska"><img class="img-responsive img-flag-xs" src="img/flags/ru.png"></a></li>
-                            <li><a href="#" title="wersja angielska"><img class="img-responsive img-flag-xs" src="img/flags/uk.png"></a></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- added small logo picture to the collapsed nav -->
-                    <a href="index.html" class="navbar-brand" alt="small logo"><img id="logo-small" src="img/logo_small.png" >Hotel Komfort
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="index.html">O hotelu</a>
-                        </li>
-                        <li>
-                            <a href="rooms.html">Pokoje</a>
-                        </li>
-                        <li>
-                            <a href="restaurant.html">Restauracja</a>
-                        </li>
-                        <li>
-                            <a href="conference.html">Konferencje</a>
-                        </li>
-                         
-                      <li class="active">
-                        <a href="aktualnosci.html">Aktualności</a>
-                        </li>
-                        
-                        <li>
-                            <a href="contact.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-    </header>
-
-    <div class="container">
-        <div class="row" style="min-width:100%">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>GALERIA</strong>
-                    </h2>
-                    <hr>
-                </div>
-                <div class="col-md-3 pcont">
-                    <img src="http://komfort-hotel.pl/img/galeria/81062_lpan.jpg" alt="" class="href">
-                </div>
-                <div class="col-md-3 pcont">
-                    <a class="fancybox" href="http://komfort-hotel.pl/img/galeria/81063_lpan.jpg" data-fancybox-group="gallery"><img src="http://komfort-hotel.pl/img/galeria/81063_lpan.jpg"/></a>
-                </div>
-                <div class="col-md-3 pcont">
-                    <a class="fancybox" href="http://komfort-hotel.pl/img/galeria/81064_lpan.jpg" data-fancybox-group="gallery"><img src="http://komfort-hotel.pl/img/galeria/81064_lpan.jpg"/></a>
-                </div>
-                <div class="col-md-3 pcont">
-                    <a class="fancybox" href="http://komfort-hotel.pl/img/galeria/81065_lpan.jpg" data-fancybox-group="gallery"><img src="http://komfort-hotel.pl/img/galeria/81065_lpan.jpg"/></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- /.container -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Komfort Hotel 2017</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-<!-- Kod tagu remarketingowego Google -->
-<!--------------------------------------------------
-Tagi remarketingowe nie mogą być wiązane z informacjami umożliwiającymi identyfikację osób ani umieszczane na stronach o tematyce należącej do kategorii kontrowersyjnych. Więcej informacji oraz instrukcje konfiguracji tagu znajdziesz tutaj: http://google.com/ads/remarketingsetup
---------------------------------------------------->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 829757127;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/829757127/?guid=ON&amp;script=0"/>
-</div>
-</noscript>
     
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5a0aedf1bb0c3f433d4c91de/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>
