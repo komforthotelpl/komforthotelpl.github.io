@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: *github*
+
+Sitemap: http://komfort-hotel.pl/sitemap.xml
+
