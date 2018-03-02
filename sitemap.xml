@@ -9,67 +9,72 @@
 
 <url>
   <loc>http://komfort-hotel.pl/</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/ru/index.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://komfort-hotel.pl/index.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/rooms.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/restaurant.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/conference.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/aktualnosci.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/contact.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/galeria.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://komfort-hotel.pl/virtual.html</loc>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/ru/rooms.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/ru/restaurant.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/ru/conference.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://komfort-hotel.pl/ru/contact.html</loc>
-  <lastmod>2018-01-29T09:54:20+00:00</lastmod>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://komfort-hotel.pl/ru/galery.html</loc>
+  <lastmod>2018-03-02T12:12:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
